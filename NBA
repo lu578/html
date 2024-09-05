@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA Search Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f3f4;
+        }
+        header {
+            background-color: #ffffff;
+            border-bottom: 1px solid #dadce0;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #202124;
+        }
+        .search-box {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 10px;
+            border-radius: 24px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            background-color: #ffffff;
+            display: flex;
+        }
+        .search-box input[type="text"] {
+            flex: 1;
+            border: none;
+            padding: 10px;
+            border-radius: 24px 0 0 24px;
+            outline: none;
+        }
+        .search-box input[type="submit"] {
+            border: none;
+            padding: 10px 20px;
+            background-color: #1a73e8;
+            color: white;
+            border-radius: 0 24px 24px 0;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .results {
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .results h2 {
+            margin-top: 0;
+            color: #202124;
+        }
+        .results .result-item {
+            margin-bottom: 20px;
+        }
+        .results .result-item h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #1a73e8;
+        }
+        .results .result-item p {
+            margin: 5px 0;
+            color: #202124;
+        }
+        .footer {
+            background-color: #ffffff;
+            padding: 10px;
+            text-align: center;
+            border-top: 1px solid #dadce0;
+            font-size: 14px;
+            color: #606060;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">My Search Engine</div>
+        <div class="search-box">
+            <input type="text" placeholder="Search">
+            <input type="submit" value="Search">
+        </div>
+    </header>
+
+    <div class="results">
+        <h2>Search Results for "NBA"</h2>
+        <div class="result-item">
+            <h3><a href="https://www.nba.com">NBA Official Site</a></h3>
+            <p>The official website of the National Basketball Association.</p>
+        </div>
+        <div class="result-item">
+            <h3><a href="https://en.wikipedia.org/wiki/NBA">NBA - Wikipedia</a></h3>
+            <p>Information about the National Basketball Association on Wikipedia.</p>
+        </div>
+        <div class="result-item">
+            <h3><a href="https://www.espn.com/nba/">NBA - ESPN</a></h3>
+            <p>Latest news, scores, and stats from ESPN on the NBA.</p>
+        </div>
+        <!-- Add more results as needed -->
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 My Search Engine</p>
+    </footer>
+</body>
+</html>
